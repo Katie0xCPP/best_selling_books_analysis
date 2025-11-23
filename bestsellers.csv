@@ -5,7 +5,7 @@ pip install seaborn
 
 ## 4. Get a “best-selling books” dataset
 
-### Option A – Real dataset (Kaggle or similar)
+## Option A – Real dataset (Kaggle or similar)
 - Go to your browser and search:  
   **`"amazon bestsellers with categories kaggle"`**  
 - Download the CSV file from Kaggle (you may need a free account).
@@ -22,7 +22,7 @@ That dataset usually has columns like:
 - `Year` – year it was a bestseller  
 - `Genre` – Fiction or Non Fiction
 
-### Option B – Make your own small CSV manually (if you don’t want Kaggle yet)
+## Option B – Make your own small CSV manually (if you don’t want Kaggle yet)
 
 1. Open **Excel** or **Notepad**.
 2. Put headers like:
@@ -32,3 +32,4 @@ That dataset usually has columns like:
    The Alchemist,Paulo Coelho,4.7,24000,10,2015,Fiction
    Becoming,Michelle Obama,4.9,53000,18,2018,Non Fiction
    ...
+
