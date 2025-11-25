@@ -1,133 +1,91 @@
-Best-Selling Books Data Analysis
+# Best-Selling Books Data Analysis
 
 A Python data analysis project that explores best-selling books to uncover trends in authors, genres, ratings, and yearly patterns.
 
-Overview
+## Overview
 
-This project analyzes a dataset of best-selling books using pandas for data manipulation and matplotlib for visualization.
-The goal is to understand patterns such as:
+This project analyzes a dataset of best-selling books using pandas for data manipulation and matplotlib for visualization. The goals include identifying frequent authors, understanding rating distributions, examining genre trends, analyzing the relationship between ratings and reviews, and exploring how best-selling books change across years.
 
-Which authors appear most frequently
+## Project Structure
 
-Rating distributions and review behavior
-
-Average ratings by genre
-
-Trends in best-sellers across years
-
-Correlations between ratings and review counts
-
-Everything is reproducible in a clean VS Code environment using a virtual environment.
-
-Project Structure
 best_selling_books_analysis/
 │
 ├── bestsellers.csv          # Dataset containing the book data
 ├── analyze_books.py         # Main analysis script
 └── .venv/                   # Virtual environment (not uploaded to GitHub)
 
-Technologies Used
+## Technologies Used
 
-Python 3
+- Python 3  
+- pandas for data loading and cleaning  
+- matplotlib for visualizations  
+- VS Code for development  
+- Virtual environment (.venv) for package isolation  
 
-pandas — data loading and cleaning
+## Features and Analysis
 
-matplotlib — visualizations
+### Dataset Loading and Inspection
+- Loading the CSV file  
+- Displaying initial rows  
+- Showing data types and summary statistics  
 
-VS Code — development environment
+### Data Cleaning
+- Converting columns to numeric types  
+- Removing or handling malformed rows  
 
-Virtual Environment (.venv) — isolated package management
+### Author Frequency Analysis
+- Identifying the most common bestselling authors  
+- Generating bar charts  
 
-Features and Analysis
+### Rating Distribution
+- Visualizing histograms of user ratings  
+- Computing rating statistics  
 
-The analysis includes:
+### Rating vs. Reviews Correlation
+- Creating scatter plots  
+- Calculating correlation coefficients  
 
-Dataset Loading and Inspection
+### Genre Analysis
+- Comparing average ratings across genres  
+- Visualizing results with bar charts  
 
-Previewing rows
+### Bestsellers Over Time
+- Counting bestsellers per year  
+- Plotting historical trends  
 
-Checking data types
+## How to Run the Project
 
-Summary statistics
-
-Data Cleaning
-
-Ensuring numeric types (Ratings, Reviews, Price, Year)
-
-Handling missing or malformed rows
-
-Author Frequency Analysis
-
-Top 10 most common bestselling authors
-
-Bar chart visualization
-
-Rating Distribution
-
-Histograms of user ratings
-
-Summary statistics
-
-Rating vs. Reviews Correlation
-
-Scatter plots
-
-Calculated correlation coefficient
-
-Genre Analysis
-
-Average rating per genre
-
-Genre comparison bar chart
-
-Bestsellers Over Time
-
-Number of bestselling books per year
-
-Line graph showing historical patterns
-
-How to Run the Project
-
-Clone or download the repository
-
-Open the folder in VS Code
-
-In the terminal, create and activate a virtual environment:
+1. Clone or download this repository.
+2. Open the folder in VS Code.
+3. In the terminal, create and activate a virtual environment:
 
 python -m venv .venv
 .venv\Scripts\activate
 
-
-Install required libraries:
+4. Install the required Python libraries:
 
 pip install pandas matplotlib
 
-
-Run the main analysis script:
+5. Run the analysis script:
 
 python analyze_books.py
 
+6. View results in the terminal and in the generated plots.
 
-View results directly in the terminal and through generated plots.
+## Dataset
 
-Data
+The file bestsellers.csv contains the following columns:
 
-The dataset bestsellers.csv includes:
+- Name (book title)  
+- Author  
+- User Rating  
+- Reviews  
+- Price  
+- Year (bestseller year)  
+- Genre (Fiction or Non-Fiction)  
 
-Name — Book title
+## License
 
-Author
+This project is intended for educational and analytical use.
 
-User Rating
-
-Reviews
-
-Price
-
-Year (bestseller year)
-
-Genre (Fiction / Non-Fiction)
-
-License
-
-This project is for educational and analytical purposes.
+Created using Python, pandas, and matplotlib.
